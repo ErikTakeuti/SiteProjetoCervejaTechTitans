@@ -67,7 +67,7 @@ body {
 
     background:
         linear-gradient(45deg, rgba(0,0,0,0.9), rgba(0,0,0,0.5)),
-        url('img/fabrica_cerveja.jpg');
+        url('../img/cerveja.jpg');
 
     background-size: cover;
     background-position: center;
