@@ -1,0 +1,164 @@
+:root {
+    --bg-color: #05070a;
+    --card-bg: rgba(20, 25, 35, 0.7);
+    --purple: #B069DB;
+    --border-color: rgba(138, 0, 196);
+    --font-main: 'Rajdhani', sans-serif;
+    --font-logo: 'Orbitron', sans-serif;
+}
+
+body {
+    margin: 0;
+    background: radial-gradient(circle at 50% 50%, #0d121d 0%, var(--bg-color) 100%);
+    color: white;
+    font-family: var(--font-main);
+    overflow-x: hidden;
+}
+
+/* ================= HEADER ================= */
+.main-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: 70px;
+
+    background: rgba(5, 10, 20, 0.6);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* Logo */
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--font-logo);
+    letter-spacing: 2px;
+}
+
+.logo-hex {
+    background: var(--purple);
+    color: black;
+    padding: 6px 12px;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    font-weight: bold;
+}
+
+.logo-img{
+    width: 60px;
+    height: 60px;
+}
+
+/* Nav */
+.main-nav a {
+    text-decoration: none;
+    color: #9aa4af;
+    margin-left: 25px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+    color: var(--purple);
+    text-shadow: 0 0 8px var(--purple);
+}
+
+/* ================= HERO ================= */
+.hero-wrap {
+    padding-top: 100px;
+}
+
+.hero-inner {
+    height: 420px;
+    background:
+        linear-gradient(45deg, rgba(0,0,0,0.85), transparent),
+        url('../img/senac.jpeg');
+    background-size: cover;
+    border-radius: 20px;
+    border: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    box-shadow: 0 0 50px rgba(0, 242, 255, 0.1);
+}
+
+.hero-content h1 {
+    font-family: var(--font-logo);
+}
+
+.glow-text {
+    color: var(--purple);
+    text-shadow: 0 0 15px var(--purple);
+}
+
+/* ================= BUTTONS ================= */
+.btn-cyber {
+    background: transparent;
+    color: var(--purple);
+    border: 1px solid var(--purple);
+    padding: 10px 30px;
+    font-family: var(--font-logo);
+    clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
+    transition: 0.3s;
+}
+
+.btn-cyber:hover {
+    background: var(--purple);
+    color: black;
+    box-shadow: 0 0 20px var(--purple);
+}
+
+.btn-sm-cyber {
+    background: transparent;
+    color: var(--purple);
+    border: 1px solid var(--purple);
+    padding: 5px 15px;
+    font-size: 0.75rem;
+    transition: 0.3s;
+}
+
+.btn-sm-cyber:hover {
+    background: var(--purple);
+    color: black;
+}
+
+/* ================= CARDS ================= */
+.cyber-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    padding: 15px;
+    transition: 0.3s;
+    text-align: justify;
+}
+
+.cyber-card:hover {
+    box-shadow: 0 0 20px var(--border-color);
+    transform: translateY(-5px);
+}
+
+.card-img {
+    height: 150px;
+    border-radius: 8px;
+    background-size: cover;
+    margin-bottom: 15px;
+}
+
+/* ================= SECTIONS ================= */
+.section-title {
+    font-family: var(--font-logo);
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+/* ================= ABOUT ================= */
+.about-p{
+    color: #B069DB;
+}
+
+/* ================= CONTACTS ================= */
+.contact-p{
+    color: #B069DB;
+}

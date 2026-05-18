@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto - Fabricação de Cerveja</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@300;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style_cerveja_page.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="main-header d-flex justify-content-between align-items-center px-5">
+
+        <div class="logo-area">
+            <img src="img/logo.png" alt="Logo" class="logo-img">
+            <span>TECH TITANS</span>
+        </div>
+
+        <nav class="main-nav">
+            <a href="index.html">HOME</a>
+            <a href="#sobre" class="active">PROJETO</a>
+            <a href="#downloads">DOWNLOADS</a>
+        </nav>
+
+    </header>
+
+    <!-- HERO -->
+    <section class="hero-wrap container">
+        <div class="hero-inner">
+            <div class="hero-content">
+                <h1>
+                    PROJETO DE <br>
+                    <span class="glow-text">
+                        FABRICAÇÃO DE CERVEJA
+                    </span>
+                </h1>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section id="sobre" class="container mt-5">
+
+        <h2 class="section-title">
+            RESUMO DO PROJETO
+        </h2>
+
+        <p class="project-text">
+            Primeiramente, o TRIAC não funciona como um transformador nem como um resistor. 
+            Ele não resiste à tensão e também não trabalha por indução eletromagnética. 
+            O que ele faz é conduzir corrente apenas no momento em que é acionado dentro do ciclo da rede elétrica.
+            Com isso, conseguimos controlar a potência dos equipamentos de forma mais inteligente, sem grandes desperdícios e com boa 
+            eficiência energética.
+            
+            No nosso código, utilizamos o tempo da senoide da rede elétrica. 
+            A partir disso, controlamos o instante em que o TRIAC é acionado em cada ciclo. 
+            Ou seja, quanto mais cedo ele dispara, maior a potência entregue; quanto mais tarde, menor a potência.
+            Dessa forma, o nosso controle PID atua diretamente sobre essa variável manipulada, que é o tempo de disparo do TRIAC.
+            
+            Quando o PID está ativo, o sistema consegue ajustar automaticamente a potência para manter o forno na temperatura desejada.
+            Enquanto isso, os dados de operação (como temperatura e potência) são enviados pelo código para o Google Sheets, 
+            onde ficam armazenados em uma planilha. 
+            Posteriormente, esses dados podem ser organizados e visualizados em um dashboard para análise.
+        </p>
+
+    </section>
+
+    <!-- CARDS -->
+    <section id="downloads" class="container mt-5 mb-5">
+        <h2 class="section-title">
+            ARQUIVOS DO PROJETO PARA DOWNLOAD
+        </h2>
+
+        <div class="row g-4">
+
+            <!-- CARD 1 -->
+            <div class="col-lg-4">
+                <div class="cyber-card">
+                    <div class="card-img"
+                         style="background-image: url('img/materiais.jpg');">
+                    </div>
+                    <h3>Slide de Apresentação</h3>
+                    <p>
+                       Slides utilizados na apresentação do projeto para os professores responsáveis.
+                    </p>
+                    <a href="downloads/lista_materiais.pdf"
+                       class="btn-cyber" target="_blank"
+                       download>
+                        DOWNLOAD
+                    </a>
+                </div>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="col-lg-4">
+                <div class="cyber-card">
+                    <div class="card-img"
+                         style="background-image: url('img/codigo.jpg');">
+                    </div>
+                    <h3>Código do Projeto</h3>
+                    <p>
+                        Arquivos de programação utilizados no ESP32
+                        e na automação do sistema.
+                    </p>
+                    <a href="downloads/codigo_projeto.zip"
+                       class="btn-cyber" target="_blank"
+                       download>
+                        DOWNLOAD
+                    </a>
+                </div>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="col-lg-4">
+                <div class="cyber-card">
+                    <div class="card-img"
+                         style="background-image: url('img/artigo.jpg');">
+                    </div>
+                    <h3>Artigo Científico</h3>
+                    <p>
+                        Artigo acadêmico detalhando os objetivos,
+                        metodologia e resultados do projeto.
+                    </p>
+                    <a href="downloads/Artigo_TechTitans___Projeto_Cerveja.pdf"
+                       class="btn-cyber" target="_blank"
+                       download>
+                        DOWNLOAD
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

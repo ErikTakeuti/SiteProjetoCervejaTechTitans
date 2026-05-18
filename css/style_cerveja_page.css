@@ -1,0 +1,163 @@
+:root {
+    --bg-color: #05070a;
+    --card-bg: rgba(20, 25, 35, 0.7);
+    --purple: #B069DB;
+    --border-color: rgba(138, 0, 196);
+    --font-main: 'Rajdhani', sans-serif;
+    --font-logo: 'Orbitron', sans-serif;
+}
+
+body {
+    margin: 0;
+    background: radial-gradient(circle at 50% 50%, #0d121d 0%, var(--bg-color) 100%);
+    color: white;
+    font-family: var(--font-main);
+    overflow-x: hidden;
+}
+
+/* ================= HEADER ================= */
+
+.main-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: 70px;
+
+    background: rgba(5, 10, 20, 0.6);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--font-logo);
+    letter-spacing: 2px;
+}
+
+.logo-img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #9aa4af;
+    margin-left: 25px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+    color: var(--purple);
+    text-shadow: 0 0 8px var(--purple);
+}
+
+/* ================= HERO ================= */
+
+.hero-wrap {
+    padding-top: 80px;
+}
+
+.hero-inner {
+    min-height: 350px;
+
+    background:
+        linear-gradient(45deg, rgba(0,0,0,0.9), rgba(0,0,0,0.5)),
+        url('img/fabrica_cerveja.jpg');
+
+    background-size: cover;
+    background-position: center;
+
+    border-radius: 20px;
+    border: 1px solid var(--border-color);
+
+    display: flex;
+    align-items: center;
+
+    padding: 50px;
+
+    box-shadow: 0 0 50px rgba(176, 105, 219, 0.15);
+}
+
+.hero-content h1 {
+    font-family: var(--font-logo);
+    font-size: 3rem;
+}
+
+.glow-text {
+    color: var(--purple);
+    text-shadow: 0 0 15px var(--purple);
+}
+
+/* ================= TEXT ================= */
+
+.project-text {
+    color: #c8d0d9;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+.section-title {
+    font-family: var(--font-logo);
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+}
+
+/* ================= CARDS ================= */
+
+.cyber-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    transition: 0.3s;
+    height: 100%;
+}
+
+.cyber-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(176, 105, 219, 0.3);
+}
+
+.card-img {
+    height: 180px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+}
+
+.cyber-card h3 {
+    font-family: var(--font-logo);
+    color: white;
+    margin-bottom: 15px;
+}
+
+.cyber-card p {
+    color: #b8c0cc;
+}
+
+/* ================= BUTTON ================= */
+
+.btn-cyber {
+    background: transparent;
+    color: var(--purple);
+    border: 1px solid var(--purple);
+    padding: 10px 25px;
+    font-family: var(--font-logo);
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.btn-cyber:hover {
+    background: var(--purple);
+    color: black;
+    box-shadow: 0 0 20px var(--purple);
+}
